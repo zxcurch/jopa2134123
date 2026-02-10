@@ -1,0 +1,110 @@
+/* style.css */
+
+/* Основные настройки для всего сайта */
+body {
+    /* Красивый градиентный фон (сине-фиолетовый) */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Если хочешь вернуть свою картинку фона, раскомментируй строку ниже: */
+    /* background-image: url('images/background.jpg'); */
+    
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    color: #333; /* Цвет текста */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Чтобы фон был на весь экран */
+}
+
+/* Ссылки навигации */
+.navigation {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый */
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #764ba2;
+    color: white;
+}
+
+/* Центральный блок */
+.center {
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    background-color: #fff;
+    padding: 40px;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* --- ВАЖНО: Настройка картинок --- */
+img {
+    width: 300px;        /* Фиксированная ширина */
+    height: 300px;       /* Фиксированная высота */
+    object-fit: cover;   /* Обрезает лишнее, сохраняя пропорции (не сплющивает) */
+    border-radius: 15px; /* Закругленные углы */
+    display: block;
+    margin: 20px auto;   /* Центрирование картинки */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+}
+
+h2 {
+    color: #764ba2;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Списки */
+ul, ol {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 14px;
+}
